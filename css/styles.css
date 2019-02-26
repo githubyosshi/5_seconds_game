@@ -36,3 +36,10 @@
   line-height: 40px;
   box-shadow: 0 6px 0 #ccc;
 }
+
+/* クリックされたら押し込む */
+#start.pushed, #stop.pushed {
+  margin-top: 3px;
+  box-shadow: 0 3px 0 #ccc;
+  background: #d7e80f
+}

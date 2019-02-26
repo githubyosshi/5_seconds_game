@@ -8,6 +8,8 @@
 
   start.addEventListener('click', function() {
     startTime = Date.now();    // 現在時刻から経過時間取得
+    this.className = 'pushed';  // clickされたらclassNameのpushedをつける
+    stop.className = '';      // stopがclickされたら元に戻す
   });
 
   stop.addEventListener('click', function() {
@@ -17,6 +19,8 @@
     // elapsedTime = 4;
     // result.textContent = elapsedTime;     // resultに表示
     result.textContent = elapsedTime.toFixed(3);   // 小数点3位まで停止時間表示
+    this.className = 'pushed';  // clickされたらclassNameのpushedをつける
+    start.className = '';      // startがclickされたら元に戻す
     diff = elapsedTime - 5.0;             // 5秒に近い値
     // if (diff > -1.0 && < 1.0) {           // 1秒前後
     if (Math.abs(diff) < 0.5) {   // 絶対値（マイナスも正数に置換え）で比較
