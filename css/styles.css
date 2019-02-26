@@ -14,6 +14,11 @@
   line-height: 60px;      /* 中央揃え */
 }
 
+#result.perfect {
+  background: #FA5858;
+  color: #fff;
+}
+
 #start {
   float: left;
 }
