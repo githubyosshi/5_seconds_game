@@ -14,8 +14,12 @@
   line-height: 60px;      /* 中央揃え */
 }
 
+#result.stanby {
+  opacity: 0.5;      /* カウンターの色を薄く */
+}
+
 #result.perfect {
-  background: #FA5858;
+  background: #469bf2;
   color: #fff;
 }
 
