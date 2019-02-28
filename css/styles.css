@@ -1,0 +1,49 @@
+.container {
+  font-family: 'Courier New', sans-serif;
+  width: 300px;
+  margin: 30px auto 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#target, #result {
+  font-size: 32px;
+  margin-bottom: 15px;
+  background: #ccc;
+  height: 60px;
+  line-height: 60px;      /* 中央揃え */
+}
+
+#result.stanby {
+  opacity: 0.5;      /* カウンターの色を薄く */
+}
+
+#result.perfect {
+  background: #469bf2;
+  color: #fff;
+}
+
+#start {
+  float: left;
+}
+
+#stop {
+  float: right;
+}
+
+#start, #stop {
+  cursor: pointer;
+  font-size: 18px;
+  width: 145px;
+  background: #eee;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 6px 0 #ccc;
+}
+
+/* クリックされたら押し込む */
+#start.pushed, #stop.pushed {
+  margin-top: 3px;
+  box-shadow: 0 3px 0 #ccc;
+  background: #d7e80f
+}
